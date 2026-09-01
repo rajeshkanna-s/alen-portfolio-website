@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useId, createContext, useContext, type ReactNode } from 'react';
+import heroPortrait from './rajeshkanna.jpg';
 
 // ─── Theme context ──────────────────────────────────────────────────────────────
 
@@ -700,10 +701,10 @@ function HeroSection() {
               background: 'var(--c-card)',
             }}>
               <img
-                src="/rajeshkanna.jpg"
+                src={heroPortrait}
                 alt="Rajeshkanna S — Senior Full Stack Software Engineer & Architect"
                 className="w-full h-full object-cover object-center"
-                style={{ filter: 'saturate(0.9) brightness(0.95)' }}
+                style={{ filter: 'saturate(0.95) brightness(1)' }}
               />
               <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(180deg,var(--c-scan) 0%,transparent 40%,transparent 60%,var(--c-scan) 100%)' }} />
               <div className="absolute left-0 right-0 h-10 pointer-events-none" style={{ background: 'linear-gradient(180deg,transparent,var(--c-scan),transparent)', animation: 'scanline 6s ease-in-out infinite' }} />
